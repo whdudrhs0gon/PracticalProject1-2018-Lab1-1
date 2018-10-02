@@ -70,6 +70,7 @@ public class Calculator {
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		print("DV:" , divide(firstIntArg,secondIntArg));
 		print("MOD:" , mod(firstIntArg,secondIntArg));
+		print("countForAnyCompution", getCount());
 	}
 
 	
