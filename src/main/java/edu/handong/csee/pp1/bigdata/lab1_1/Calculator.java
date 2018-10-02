@@ -44,9 +44,10 @@ public class Calculator {
 		// Based on our class definition, we can create a real object!
 		// classname objectname = new classname();
 		Calculator myCalulator = new Calculator();
-
+		String[] value = {"2", "3"};
 		// now we can do some action (method) in our object!
-		myCalulator.execute(args[0], args[1]);
+		myCalulator.execute(value[0],value[1]);
+		
 	}
 
 	/**
@@ -113,8 +114,7 @@ public class Calculator {
 		else 
 		{
 			return (double) first / second;	
-		}
-			
+		}			
 	}
 
 	int mod(int first, int second) {
