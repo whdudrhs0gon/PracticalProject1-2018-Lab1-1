@@ -105,15 +105,16 @@ public class Calculator {
 	double divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
-		try 
-		{
-			return first / second;			
-		}
-		catch(ArithmeticException e)
+						
+		if (second == 0) 
 		{
 			return Double.NaN;
 		}
-				
+		else 
+		{
+			return (double) first / second;	
+		}
+			
 	}
 
 	int mod(int first, int second) {
