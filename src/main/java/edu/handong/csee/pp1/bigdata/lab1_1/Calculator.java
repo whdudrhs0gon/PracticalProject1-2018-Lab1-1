@@ -16,8 +16,8 @@ package edu.handong.csee.pp1.bigdata.lab1_1;
  */
 /**
  * @author jaech
- *
- */
+ *    
+ */ 
 public class Calculator {
 
 	// An object has data and actions
