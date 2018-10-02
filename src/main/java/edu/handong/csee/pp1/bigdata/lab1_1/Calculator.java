@@ -77,7 +77,7 @@ public class Calculator {
 	 * @param result
 	 * This method prints out computation result.
 	 */
-	void print(String prefix, int result) {
+	void print(String prefix, double result) {
 		System.out.println(prefix + " " + result);
 	}
 
@@ -93,16 +93,24 @@ public class Calculator {
 		return first - second;
 	}
 
-	int multiply(int first, int second) {
+	double multiply(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
 		return first * second;
 	}
 
-	int divide(int first, int second) {
+	double divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
-		return first / second;
+		try 
+		{
+			return first / second;			
+		}
+		catch(ArithmeticException e)
+		{
+			return Double.NaN;
+		}
+				
 	}
 
 	int mod(int first, int second) {
