@@ -71,6 +71,7 @@ public class Calculator {
 		print("DV:" , divide(firstIntArg,secondIntArg));
 		print("MOD:" , mod(firstIntArg,secondIntArg));
 		print("countForAnyCompution", getCount());
+		print("localCount", getLocalCount());
 	}
 
 	
